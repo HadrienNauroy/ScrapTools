@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: ScrapTools
+Version: 0.0.1
+Summary: Useful tools for scraping with Selenium
+Home-page: https://github.com/HadrienNauroy
+Author: Hadrien Nauroy
+Author-email: hadriennauroy@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/HadrienNauroy/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# ScrapTools
+Librarie of usefull tools for scraping with Selenium
+
+
+## Description
+This project contains :
+- A scraperBot class with tools to solve captcha
+- Some useful decorators
+
+## Dependencies 
+- Selenium
+- ffmpeg
+
+## Installation
+
+    pip install pyreadline
+    python3 setup.py install --user 
+
+

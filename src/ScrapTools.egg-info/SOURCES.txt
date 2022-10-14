@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+src/ScrapTools/Decorators.py
+src/ScrapTools/ScraperBot.py
+src/ScrapTools/__init__.py
+src/ScrapTools.egg-info/PKG-INFO
+src/ScrapTools.egg-info/SOURCES.txt
+src/ScrapTools.egg-info/dependency_links.txt
+src/ScrapTools.egg-info/top_level.txt
