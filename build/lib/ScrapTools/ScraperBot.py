@@ -57,6 +57,9 @@ class ScraperBot:
         # used in wait for element
         self.timeout = timeout
 
+    def get(self, link, *args, **kwargs):
+        self.driver.get(link, *args, **kwargs)
+
     def wait_for_elem(self, locator_type, locator):
         """
         Simple wrapper around selenium's find_element
@@ -116,7 +119,6 @@ class ScraperBot:
         tmp_files = [mp3_file, wav_file]
 
         # download audio
-        tm.sleep(2)
         with open("_tmp.mp3", "wb") as f:
             link = download_link.get_attribute("href")
             try:

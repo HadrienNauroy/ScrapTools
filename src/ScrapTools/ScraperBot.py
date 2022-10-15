@@ -57,9 +57,8 @@ class ScraperBot:
         # used in wait for element
         self.timeout = timeout
 
-    def get(self,link,*args,**kwargs):
-        self.driver.get(link,*args,**kwargs)
-
+    def get(self, link, *args, **kwargs):
+        self.driver.get(link, *args, **kwargs)
 
     def wait_for_elem(self, locator_type, locator):
         """
@@ -146,7 +145,6 @@ class ScraperBot:
         with sr.AudioFile("_tmp.wav") as source:
             recorded_audio = recognizer.listen(source)
             text = recognizer.recognize_google(recorded_audio, show_all=True)
-            print(f"{text} \n\n\n\n")
 
         # Type out the answer
         self.wait_for_elem(By.ID, "audio-response").send_keys(text)
@@ -161,7 +159,6 @@ class ScraperBot:
         self.driver.close()
 
 
-@retry
 def _rget(link, **kwargs):
     """
     Simple wraper around request.get function to raise Error if request failed
